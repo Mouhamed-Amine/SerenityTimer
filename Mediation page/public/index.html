@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health-Care</title>
+    <link rel="icon" href="video/healthlogo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@700&display=swap" rel="stylesheet">
+</head>
+<body onload="myFunction()">  
+
+<h1 class="phrase">Take care of your own <i>Health</i> <br><center><i>Meditate</i></center></h1>
+<main class="main">
+    <div class="content">
+<div class="vid-container">
+    <video class="bg" loop>
+        <source  src="./video/rain.mp4" type="video/mp4"/>
+            </video>
+</div>
+<div class="row">
+    
+<div class="time-select">
+        <button data-time="60">1 Minutes</button>
+    <button data-time="300">5 Minutes</button>
+    <button data-time="600">10 Minutes</button>
+    <button data-time="900">15 Minutes</button>
+    </div>
+ 
+
+
+    
+    
+    <div class="playbutton">
+        <audio class="song">
+        <source src="./sounds/rain.mp3" />
+        </audio>
+        <img src="./svg/play.svg" alt="play" class="play ">
+        <svg 
+        class="track-outline"
+        width="453" 
+        height="453"
+         viewBox="0 0 453 453"
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg">
+            <circle 
+            
+        cx="226.5" 
+        cy="226.5" 
+        r="216.5" 
+        stroke="white" 
+        stroke-width="20"/>
+            </svg>
+            <svg 
+            class="moving-track"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+                <circle 
+                cx="226.5" 
+                cy="226.5" 
+                r="216.5" 
+                stroke="#018EBA"
+                 stroke-width="20"/>
+                </svg>
+              <h3 class="display-time">0:00</h3>  
+        </div>
+
+
+        <div class="sound-picker">
+            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
+            <img src="./svg/rain.svg" alt="rain"></button>
+            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+                <img src="./svg/beach.svg" alt="beach">
+            </button>
+                </div>
+
+</div>
+    </div>
+    
+    <div class="socials">
+        <ul>
+            <li><a href="https://www.facebook.com/CraneHacker" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/mouhamed-amine-531036187/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/____amine/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+    </div>
+</main>
+<audio src="sounds/dreaming.mp3" class="stopbip"></audio>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="alertmobile.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
